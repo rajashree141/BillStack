@@ -7,9 +7,9 @@ import {
 import { Toaster } from "react-hot-toast";
 
 // Public Pages
-import LandingPage from "./pages/LandingPage";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import SignUp from "./pages/Auth/SignUp";
+import Login from "./pages/Auth/Login";
 
 // Protected Pages
 import Dashboard from "./pages/Dashboard/Dashboard";
@@ -18,9 +18,8 @@ import CreateInvoice from "./pages/Invoices/CreateInvoice";
 import InvoiceDetail from "./pages/Invoices/InvoiceDetail";
 import ProfilePage from "./pages/Profile/ProfilePage";
 
-// Protected Route Wrapper
+// Protected Route
 import ProtectedRoute from "./components/auth/ProtectedRoute";
-
 const App = () => {
   return (
     <div>

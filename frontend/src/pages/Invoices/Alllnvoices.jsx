@@ -1,9 +1,4 @@
-import React from 'react'
-
-const Alllnvoices = () => {
-  return (
-    <div>Alllnvoices</div>
-  )
+function AllInvoices() {
+  return <h1>All Invoices</h1>;
 }
-
-export default Alllnvoices
+export default AllInvoices;
