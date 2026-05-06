@@ -1,4 +1,9 @@
-function CreateInvoice() {
-  return <h1>Create Invoice</h1>;
+import React from 'react'
+
+const CreateInvoice = () => {
+  return (
+    <div>CreateInvoice</div>
+  )
 }
-export default CreateInvoice;
+
+export default CreateInvoice

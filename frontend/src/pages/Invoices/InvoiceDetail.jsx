@@ -1,4 +1,9 @@
-function InvoiceDetail() {
-  return <h1>Invoice Detail</h1>;
+import React from 'react'
+
+const InvoiceDetail = () => {
+  return (
+    <div>InvoiceDetail</div>
+  )
 }
-export default InvoiceDetail;
+
+export default InvoiceDetail
