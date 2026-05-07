@@ -21,8 +21,80 @@ const Header = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
   return (
-    <div>Header</div>
+    <header
+    className={`fixed top-0 w-full z-50 transition-all duration-300 bg-gray-100 ${
+      isScrolled ? " bg-white/95 backdrop-blur-sm shadow-lg" : "bg-white/0"
+    }`}
+  >
+    <div className="max-w-7xl mx-auto px-4 sm:px6 lg:px-8">
+      <div className="flex items">
+        <div className="">
+          <div className="">
+            <FileText className="" />
+          </div>
+          <span className="">
+            AI Invoice App
+          </span>
+        </div>
+        <div className="">
+          <a
+            href="#features"
+            className=""
+          >
+            Features
+          </a>
+          <a
+            href="#testimonials"
+            className=""
+          >
+            Testimonils
+          </a>
+          <a
+            href="#faq"
+            className=""
+          >
+            FAQ
+          </a>
+        </div>
+        <div className="">
+          <Link
+            to="/login"
+            className=""
+          >
+            Login
+          </Link>
+          <Link
+            to="/Signup"
+            className=""
+          >
+            Signup
+          </Link>
+        </div>
+        <div className="">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className=""
+          >
+            {isMenuOpen ? (
+              <x className="" />
+            ) : (
+              <Menu className="" />
+            )}
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+
+    </header>
   )
 }
+            
+export default Header      
 
-export default Header
+
+       
+  
+
+
